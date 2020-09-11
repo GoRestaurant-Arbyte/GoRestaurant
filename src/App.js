@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         
         <p>
-         Relembrando o Git.
+         Relembrando o Git
         </p>
         <a
           className="App-link"
