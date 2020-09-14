@@ -11,6 +11,9 @@ const LoginScreen = ({ history }) => {
             if (!CPF /* validação de CPF */) {
                 return alert("CPF inválido");
             }
+            if (!password /* validação de CPF */) {
+                return alert("Senha inválida");
+            }
             const userData = await login(CPF, password);
 
             localStorage.setItem("userData", JSON.stringify(userData));
