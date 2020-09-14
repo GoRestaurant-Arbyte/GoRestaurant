@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route } from "react-router-dom";
+import LoginScreen from "./screens/LoginScreen";
+import MealsScreen from "./screens/MealsScreen";
+import ForgotPass from "./screens/ForgotPass";
+import Admin from "./screens/Admin";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-         Relembrando o Git
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Switch>
+        <Route exact path="/" component={MealsScreen}></Route>
+        <Route path="/login" component={LoginScreen}></Route>
+        <Route path="/forgot-pass" component={ForgotPass}></Route>
+        <Route path="/admin" component={Admin}></Route>
+      </Switch>
     </div>
   );
 }
