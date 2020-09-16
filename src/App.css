@@ -1,5 +1,8 @@
-*{
-  margin: 0;
-  padding: 0;
-  
+.container{
+    display: flex;
+}
+
+.modal{
+    flex-direction: column;
+    align-items: center;
 }
