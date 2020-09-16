@@ -1,7 +1,10 @@
 import React from 'react'
 import InputText from "../components/InputText"
 
-const ModalCreatePlate = () => {
+
+
+
+const ModalCreateMeals = () => {
     return (
         <div classeName="modal">
             <h1 className="Title">Novo Prato</h1>
@@ -20,4 +23,4 @@ const ModalCreatePlate = () => {
 
 }
 
-export default ModalCreatePlate
+export default ModalCreateMeals
