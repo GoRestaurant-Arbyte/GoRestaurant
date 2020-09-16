@@ -8,7 +8,9 @@ import ChangePass from "./screens/ChangePass";
 import Admin from "./screens/Admin";
 
 function App() {
-  return (
+
+return (
+
     <div className="container">
       <Switch>
         <Route exact path="/" component={MealsScreen}></Route>
@@ -17,6 +19,7 @@ function App() {
         <Route path="/change-pass" component={ChangePass}></Route>
         <Route path="/admin" component={Admin}></Route>
       </Switch>
+
     </div>
   );
 }
