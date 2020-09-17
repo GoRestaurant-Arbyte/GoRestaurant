@@ -1,8 +1,9 @@
 .headerIndexPage{
     background-color: #C72828;
-    width: 100%;
+    width: 100vw;
     color: white;
     display: flex;
     align-items: center;
+    height: 17.56rem;
 
 }
