@@ -1,9 +1,6 @@
 import React from 'react'
 import InputText from "../components/InputText"
 
-
-
-
 const ModalCreateMeals = () => {
     return (
         <div classeName="modal">

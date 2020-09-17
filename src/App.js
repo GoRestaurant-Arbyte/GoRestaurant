@@ -8,13 +8,7 @@ import ChangePass from "./screens/ChangePass";
 import Admin from "./screens/Admin";
 
 function App() {
-<<<<<<< HEAD
   return (
-=======
-
-return (
-
->>>>>>> 3def6fbc97bd64f9be81796a9a48b33bacb9d98c
     <div className="container">
       <Switch>
         <Route exact path="/" component={MealsScreen}></Route>
@@ -23,10 +17,6 @@ return (
         <Route path="/change-pass" component={ChangePass}></Route>
         <Route path="/admin" component={Admin}></Route>
       </Switch>
-<<<<<<< HEAD
-=======
-
->>>>>>> 3def6fbc97bd64f9be81796a9a48b33bacb9d98c
     </div>
   );
 }
