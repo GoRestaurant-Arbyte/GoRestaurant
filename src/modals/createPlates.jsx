@@ -1,9 +1,6 @@
 import React, {useState} from 'react'
 import InputText from "../components/InputText"
 
-
-
-
 const ModalCreateMeals = () => {
 
     const [editMeal, setEditMeal] = useState=("")
