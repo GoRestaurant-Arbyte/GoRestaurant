@@ -1,10 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 import InputText from "../components/InputText"
 
 
 
 
 const ModalCreateMeals = () => {
+
+    const [editMeal, setEditMeal] = useState=("")
+
+    const EditMeal = ()=>{
+        
+    }
+
+
     return (
         <div classeName="modal">
             <h1 className="Title">Novo Prato</h1>
