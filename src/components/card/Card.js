@@ -1,21 +1,17 @@
 import React from "react"
-import './card.css'
 
-function Card(props) {
+
+
+function Card({ imgPlate, titleCard }) {
     return (
-
         <div className="card">
-            <div className="cardImage">
-                {/* <img clasName="imgPrato" src={props.image} ></img> */}
+            <img className="imgPlates" src={imgPlate} alt="imagem de prato veggie"></img>
+            <div className="foodDescription">
+                <h1 className="titleCard">{titleCard}</h1>
+                <p>Macarrão ao molho branco, fughi e cheiro verde das montanhas.</p>
             </div>
-            <div>
-    <h1 className="titleCard">{props.titleCard}</h1>
-    </div>
         </div>
-
-
     )
-
 }
 
 export default Card

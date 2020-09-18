@@ -3,7 +3,16 @@
     width: 100vw;
     color: white;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     height: 17.56rem;
+    position: relative;
 
+}
+.imgLogo{
+    width: 4rem;
+    padding-left: 10rem;
+    padding-top: 3.43rem;
+}
+h4{
+    padding-left: 10rem;
 }
