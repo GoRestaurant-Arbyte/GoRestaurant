@@ -4,6 +4,7 @@
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: initial;
     height: 17.56rem;
     position: relative;
 
@@ -12,6 +13,7 @@
     width: 4rem;
     padding-left: 10rem;
     padding-top: 3.43rem;
+    
 }
 h4{
     padding-left: 10rem;

@@ -6,18 +6,19 @@ import '../components/header/header.css'
 import imgPlate from '../assets/img/pratos.png'
 import "../MealsScreen.css"
 
-
 const MealsScreen = ({ history }) => {
     return (
         <div>
         <Header></Header>
         <div className="sectionCardsPlates">
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!"/> 
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!"/> 
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!"/> 
-               
-                
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>
                </div> 
+               
        </div>
         
     );

@@ -4,38 +4,45 @@
     align-items: center;
     margin: auto;
     background-color: #FFB84D;
-    width: 352px;  
+    width: 332px;  
     font-size: 16px;
     height: 488px;
     border-radius: 8px;
     position: relative;
-    top: -5rem;
-    margin:16px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
    
 }
-
+h2{
+    color: #39B100;
+}
 .imgPlates{
-   
+    box-sizing: border-box;
     align-items: center;
-    width: 17rem;
-    height: 17rem;
+    width: 16rem;
+    height: 16rem;
     padding-top: 2rem;
 }
 
 .foodDescription{
     width: 100%;
-    height: 18.20rem;
+    height: 19.20rem;
     background-color: #F0F0F5;
     position: absolute;
-    top: 12.3rem;
+    top: 11.3rem;
     border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 1.8rem;
 }
 
 .titleCard{
-    padding: 1rem 1.8rem 0.1rem ;
+    padding: 1rem 0 0.1rem ;
+    box-sizing: border-box;
 }
 p{
-     padding-left: 1.8rem;
+     box-sizing: border-box;
+    
 }
 
 

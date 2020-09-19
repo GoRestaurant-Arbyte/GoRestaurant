@@ -1,11 +1,15 @@
 .sectionCardsPlates{
-    width: 80vw;
+    width: 85vw;
     display: flex;
     align-items: center;
-    margin: auto;
-    /* position: absolute;
-    top: 15rem; */
-    /* margin: auto; */
+    justify-content: flex-start;
+    position: absolute;
+    margin:0 10% ;    
+    box-sizing: border-box;
+    top: 13rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 @media(max-width: 700px){
     .sectionCardsPlates{
