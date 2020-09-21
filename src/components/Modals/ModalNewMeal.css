@@ -1,0 +1,66 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 35, 35, 0.76);
+    -webkit-transition: all 0.5s 0.5s ease-in-out;
+    transition: all 0.5s 0.5s ease-in-out;
+    box-sizing: border-box;
+    padding:10% ;
+    padding-top: 5%;
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    color: black;
+    
+}
+
+input{
+    height: 50px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+input:hover{
+    border: none;
+    border-bottom: 2px solid purple;
+}
+input::selection{
+        border: none;
+        border-bottom: 2px solid purple;
+}
+.containerModal{
+    background-color: #F0F0F5;
+    border-radius: 8px;    
+    box-sizing: border-box;
+    display: grid;
+    padding: 2.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 20px;
+    
+}
+.titleMeal{
+    padding-bottom: 1rem;
+
+}
+
+.inputUrlImg{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+.inputNameMeals{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.inputPriceMeals{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
+.inputDescriptionMeals{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
