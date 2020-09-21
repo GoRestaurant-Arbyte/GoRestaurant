@@ -1,14 +1,5 @@
 import React from "react"
 import Header from "../components/header/Header"
-<<<<<<< HEAD
-
-
-const MealsScreen = ({ history }) => {
-    return (
-        <div className="mealsContainer">
-        <Header/>
-        </div>
-=======
 import Card from "../components/card/Card"
 import '../components/card/card.css'
 
@@ -22,7 +13,6 @@ const MealsScreen = ({ history }) => {
         
        </div>
         
->>>>>>> 9c422ad60c0a3a50c7ffb69185e03117a18fd3fe
     );
 };
 
