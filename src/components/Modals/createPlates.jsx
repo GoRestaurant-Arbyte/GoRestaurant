@@ -1,5 +1,10 @@
+<<<<<<< HEAD:src/modals/createPlates.jsx
 import React, {useState} from 'react'
 import InputText from "../components/InputText"
+=======
+import React from 'react'
+import InputText from "../InputText"
+>>>>>>> 89340c6d286b449e411ec068653a444487cefbb7:src/components/Modals/createPlates.jsx
 
 const ModalCreateMeals = () => {
 
@@ -25,7 +30,5 @@ const ModalCreateMeals = () => {
             <i className={"fas fa-camera"}></i>
         </div>
     )
-
 }
-
 export default ModalCreateMeals
