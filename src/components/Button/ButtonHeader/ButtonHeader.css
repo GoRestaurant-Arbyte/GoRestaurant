@@ -1,0 +1,28 @@
+.buttonMealsNew{
+    height: 56px;
+    width: 194px;
+    background-color: #39B100;
+    border-radius: 8px;
+    border: none;
+    /* flex-direction: row; */
+    margin-right: 5px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    justify-content:flex-end; 
+    align-items:center;
+    position: absolute;
+    right: 8%;
+    top: 17%;
+}
+.buttonAdd{
+    height: 56px;
+    width: 56px;
+    background-color:#41C900;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    margin: 0;
+    margin-left: 20px;
+    color: white;
+}

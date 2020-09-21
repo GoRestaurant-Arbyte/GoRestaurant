@@ -13,9 +13,7 @@
     box-sizing: border-box;
    
 }
-h2{
-    color: #39B100;
-}
+
 .imgPlates{
     box-sizing: border-box;
     align-items: center;
@@ -33,18 +31,41 @@ h2{
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
     margin-bottom: 10px;
-    padding-left: 1.8rem;
+
 }
 
 .titleCard{
-    padding: 1rem 0 0.1rem ;
+    padding: 1rem 1.8rem 0.1rem ;
     box-sizing: border-box;
 }
 p{
      box-sizing: border-box;
+     padding-left: 1.8rem;
     
 }
+h2{
+    color: #39B100;
+    padding-left: 1.8rem;
+}
+.mealsConf{
+    background-color: #E4E4EB;
+    height: 90px;
+    border-radius: 0 0 8px 8px;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
 
+}
+.buttonConf{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    flex-direction: row;
+    margin-right: 5px;
+    
+}
 
 /* .titleCard{
 
