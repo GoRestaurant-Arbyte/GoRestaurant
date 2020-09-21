@@ -1,5 +1,5 @@
 import React from 'react'
-import InputText from "../components/InputText"
+import InputText from "../InputText"
 
 const ModalCreateMeals = () => {
     return (
@@ -17,7 +17,5 @@ const ModalCreateMeals = () => {
             <i className={"fas fa-camera"}></i>
         </div>
     )
-
 }
-
 export default ModalCreateMeals

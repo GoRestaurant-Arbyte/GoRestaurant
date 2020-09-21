@@ -1,16 +1,21 @@
 import React from "react"
-import Header from "../components/header/Header"
-import Card from "../components/card/Card"
-import '../components/card/card.css'
+import Header from "../components/Header/Header"
+import '../components/Header/Header.css'
+import Card from "../components/Card/Card"
+import '../components/Card/Card.css'
+import imgPlate from '../assets/img/pratos.png'
+import "../MealsScreen.css"
 
 const MealsScreen = ({ history }) => {
     return (
-        <div>
+        <div className="index">
         <Header></Header>
-        <div className="sectionPlates">
-        <Card titleCard="Ao Molho!"/> <Card titleCard="Veggie"/> <Card titleCard="A lá Camarón"/>
-        </div>
-        
+        <div className="sectionCardsPlates">
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>   
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>              
+               </div> 
+               
        </div>
         
     );
