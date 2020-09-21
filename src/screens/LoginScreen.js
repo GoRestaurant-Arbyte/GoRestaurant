@@ -2,10 +2,15 @@ import React, { useState } from "react"
 import Button from "../components/Button";
 import TextInput from "../components/TextInput";
 import {login} from "../api/user"
+import ForgotPass from "../modals/forgotPass"
+
+
 
 const LoginScreen = ({ history }) => {
+    
     const [CPF, setCPF] = useState("");
     const [password, setPassword] = useState("");
+
     const doLogin = async () => {
         try {
             if (!CPF /* validação de CPF */) {
@@ -23,6 +28,7 @@ const LoginScreen = ({ history }) => {
             alert("Deu ruim " + e.message);
         }
     };
+
     return (
         <>
             <TextInput
@@ -39,9 +45,12 @@ const LoginScreen = ({ history }) => {
             />
 
             <Button onPress={doLogin}>Entrar</Button>
-            <Button onPress={() => history.push("/forgot-pass")}>Recuperar senha</Button>
+            <Button onPress={ForgotPass()}>Recuperar senha</Button>
+            
         </>
+        
     );
 };
 
 export default LoginScreen;
+
