@@ -1,15 +1,16 @@
 .sectionCardsPlates{
-    width: 85vw;
+    width: 70rem;
     display: flex;    
-    justify-content: first baseline;
+    justify-content: space-around;
     position: absolute;
-    margin:0 10% ;    
+    margin-left: 160px;  
     box-sizing: border-box;
     top: 13rem;
     flex-direction: row;
     flex-wrap: wrap;
     
 }
+
 @media(max-width: 700px){
     .sectionCardsPlates{
         width: 80vw;
@@ -18,5 +19,7 @@
         align-items: flex-start;
         margin: auto;
     }
+    .index{
+        background-color: black;
+    }
 }
-

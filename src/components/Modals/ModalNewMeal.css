@@ -5,18 +5,19 @@
     -webkit-transition: all 0.5s 0.5s ease-in-out;
     transition: all 0.5s 0.5s ease-in-out;
     box-sizing: border-box;
-    padding:15% ;
+    padding:10% ;
     padding-top: 5%;
     z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
+    color: black;
     
 }
 
 input{
-    height: 55px;
+    height: 50px;
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -37,7 +38,7 @@ input::selection{
     padding: 2.5rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 10px;
+    column-gap: 20px;
     
 }
 .titleMeal{

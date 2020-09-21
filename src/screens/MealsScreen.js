@@ -8,7 +8,7 @@ import "../MealsScreen.css"
 
 const MealsScreen = ({ history }) => {
     return (
-        <div>
+        <div className="index">
         <Header></Header>
         <div className="sectionCardsPlates">
                <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 

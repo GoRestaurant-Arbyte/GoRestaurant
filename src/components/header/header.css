@@ -1,27 +1,38 @@
 .headerIndexPage{
     background-color: #C72828;
-    width: 100vw;
+    width: 90rem;
     color: white;
     display: flex;
+
+    align-content: center;
+    padding-top: 2.75rem; 
     height: 17.56rem;
     position: relative;
     padding: 15px;
 }
+.header{
+    width: 62%; 
+    margin-left: 160px;
+    display: flex; 
+    justify-content: flex-start;
+    padding-right: 10px;
+
+
+}
 .brand{
     text-align: initial;
-    padding: 15px;       
+    padding-top: 2.75rem;   
+    padding-left: 20px;    
 }
 .imgLogo{
     width: 4rem;
     height: 4rem;
-    padding-left: 11.5%;
-    padding-top: 3.43rem;
-    top:5px
+    padding-top: 2.75rem;
     
 }
 
 
-@media(max-width: 700px){
+/* @media(max-width: 700px){
     .headerIndexPage{
         display: flex;
         align-items: center;
@@ -30,4 +41,15 @@
     .buttonMealsNew{
         position: unset;
     }
+} */
+
+@media(max-width: 700px){
+    .header{
+        margin: 0;
+        padding-right: 0;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+    }
+
 }

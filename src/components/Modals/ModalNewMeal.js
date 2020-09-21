@@ -26,8 +26,8 @@ function ModalNewMeal() {
                     <label>Descrição do Prato</label>
                     <input></input>
                 </div>
+           <ButtonHeader></ButtonHeader>
             </div>
-           
         </div>
 
     )

@@ -2,11 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
     background-color: #FFB84D;
-    width: 332px;  
+    width: 22rem;  
     font-size: 16px;
-    height: 488px;
+    height: 30.5rem;
     border-radius: 8px;
     position: relative;
     margin-bottom: 32px;
@@ -40,8 +39,8 @@
 }
 p{
      box-sizing: border-box;
-     padding-left: 1.8rem;
-    
+     height: 20px;
+     padding-top: 4px;
 }
 h2{
     color: #39B100;
@@ -49,12 +48,13 @@ h2{
 }
 .mealsConf{
     background-color: #E4E4EB;
-    height: 90px;
     border-radius: 0 0 8px 8px;
     box-sizing: border-box;
     padding: 25px;
     display: flex;
-
+    justify-content: space-between;
+    align-items: flex-end;
+ 
 }
 .buttonConf{
     height: 40px;
@@ -64,6 +64,7 @@ h2{
     border: none;
     flex-direction: row;
     margin-right: 5px;
+    align-items: center;
     
 }
 
