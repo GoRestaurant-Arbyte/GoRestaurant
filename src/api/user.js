@@ -1,5 +1,5 @@
 import Axios from "axios";
-const baseUrl = "URL DA API AQUI";
+const baseUrl = "https://go-restaurant-arbyte.herokuapp.com";
 
 export async function login(CPF, password) {
   const response = await Axios.post(`${baseUrl}/users/login`, {

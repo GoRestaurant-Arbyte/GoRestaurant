@@ -1,6 +1,6 @@
 import Axios from "axios"
 
-const URLMeals = 'url da api'
+const URLMeals = 'https://go-restaurant-arbyte.herokuapp.com'
 
 async function MealsPost(){
     const response = await Axios.post(`${URLMeals}/meals`, {
