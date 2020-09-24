@@ -1,14 +1,14 @@
 import React from "react"
-import ButtonSwitch from '../Button/ButtonSwitch/ButtonSwicth'
+import ButtonSwitch from '../Button/ButtonSwitch/ButtonSwitch'
 
-function Card({ imgPlate, titleCard, price }) {
+function Card({ meal }) {
     return (
         <div className="card">
-            <img className="imgPlates" src={imgPlate} alt="imagem de prato veggie"></img>
+            <img className="imgPlates" src={meal.image_url} alt="imagem de prato veggie"></img>
             <div className="foodDescription">
-                <h1 className="titleCard">{titleCard}</h1>
-                <p>Macarrão ao molho branco, fughi e cheiro verde das montanhas.</p>
-                <h2 className="mealsPrice">R${price}</h2>
+                <h1 className="titleCard">{meal.name}</h1>
+                <p>{meal.description}</p>
+                <h2 className="mealsPrice">R${meal.price}</h2>
                 <div className="mealsConf">
                     <button className="buttonConf" ><image src="DeleteIcon"></image> </button> <button className="buttonConf"></button>
                     <p>Disponível</p>

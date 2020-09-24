@@ -1,20 +1,36 @@
 import Axios from "axios"
 
-const URLMeals = 'url da api'
+const URLMeals = 'https://go-restaurant-arbyte.herokuapp.com'
 
-async function MealsPost(){
+
+
+function getToken() {
+    const userData = localStorage.getItem("userData")
+    const { token } = JSON.parse(userData)
+    return token
+}
+
+
+async function mealsPost(image_url, name, price, description){
     const response = await Axios.post(`${URLMeals}/meals`, {
-
-    })
+        image_url,
+        name,
+        price,
+        description,
+    }, {headers: {authorization: `Bearer ${getToken()}`}})
     return response.data
 }
 
-async function MealsPatch(){
+async function mealsPatch(){
     const response = await Axios.patch(`${URLMeals}/meals/:id`, {
 
-    })
+    }, {headers: {authorization: `Bearer ${getToken()}`}})
     return response.data
 }
 
+async function mealsGet(){
+    const response = await Axios.get(`${URLMeals}/meals`)
+    return response.data
+}
 
-export {MealsPost, MealsPatch}
+export {mealsPost, mealsPatch, mealsGet}
