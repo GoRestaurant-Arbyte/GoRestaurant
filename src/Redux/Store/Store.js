@@ -1,6 +1,6 @@
 import {createStore} from "redux"
-import handleMeals from "../Reducer/mealsRedux"
+import HandleMeal from "../Reducer/MealsReducer"
 
-const store = createStore(handleMeals)
+const store = createStore(HandleMeal)
 
 export default store

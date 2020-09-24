@@ -2,7 +2,7 @@ import React from "react"
 import Logo from '../../assets/img/logo.png'
 import TitleRestaurant from '../../assets/img/goRestaurant.png'
 import FoodType from '../../assets/img/foodType.png'
-import ButtonHeader from "../Button/ButtonHeader/ButtonHeader"
+import { ButtonLogin, ButtonNewMeal } from "../Button/ButtonHeader/ButtonHeader"
 
 
 function Header() {
@@ -15,7 +15,7 @@ function Header() {
                     <img src={FoodType}></img>
                 </section>
             </div>
-            <ButtonHeader></ButtonHeader>
+            <ButtonNewMeal />
         </div >
     )
 

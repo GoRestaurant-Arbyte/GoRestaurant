@@ -1,4 +1,4 @@
-const replaceMeal = (meal, meals, id) => {
+const replaceMeal = (meals, id, meal) => {
     const indexOf = meals.findIndex((currentMeal) => currentMeal.id === id)
     const args = [indexOf, 1]
     if (meal) {
@@ -19,9 +19,9 @@ const handleMeal = (store = initialState, action) => {
         case "CREATE_MEALS":
             return { ...store, meals: [...store.meals, action.meal] }
         case "UPDATE_MEALS":
-            return { ...store, meals: replaceTask(store.meals, action.meal.id, action.meal) }
+            return { ...store, meals: replaceMeal(store.meals, action.meal.id, action.meal) }
         case "DELETE_MEALS":
-            return { ...store, meals: replaceTask(store.meals, action.meal.id) }
+            return { ...store, meals: replaceMeal(store.meals, action.meal.id) }
         default:
             return store
     }
