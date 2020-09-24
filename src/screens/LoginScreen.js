@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Button from "../components/Button";
 import TextInput from "../components/TextInput";
 import {login} from "../api/user"
-import ForgotPass from "../modals/forgotPass"
+
 
 
 
@@ -45,7 +45,7 @@ const LoginScreen = ({ history }) => {
             />
 
             <Button onPress={doLogin}>Entrar</Button>
-            <Button onPress={ForgotPass()}>Recuperar senha</Button>
+            <Button >Recuperar senha</Button>
             
         </>
         

@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import LoginScreen from "./screens/LoginScreen";
 import MealsScreen from "./screens/MealsScreen";
 import ChangePass from "./screens/ChangePass";
-import Admin from "./screens/Admin";
+
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/" component={MealsScreen}></Route>
         <Route path="/login" component={LoginScreen}></Route>
         <Route path="/change-pass" component={ChangePass}></Route>
-        <Route path="/admin" component={Admin}></Route>
+        
       </Switch>
     </div>
   );
