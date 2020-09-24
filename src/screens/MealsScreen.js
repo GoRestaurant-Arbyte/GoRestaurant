@@ -2,7 +2,7 @@ import React, {useEffect} from "react"
 import Header from "../components/header/Header"
 import '../components/header/header.css'
 import Card from "../components/card/Card"
-import '../components/card/card.css'
+import '../components/Card/Card.css'
 import imgPlate from '../assets/img/pratos.png'
 import "../MealsScreen.css"
 import {mealsGet} from "../api/meals"
@@ -23,23 +23,11 @@ const MealsScreen = ({ history, dispatch, meals}) => {
         <div className="index">
         <Header></Header>
         <div className="sectionCardsPlates">
-<<<<<<< HEAD
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>   
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>                 
-               </div> 
-=======
             {meals.map(meal=> <Card meal={meal}/>)}                     
         </div> 
->>>>>>> 5788f53679ac6d8b90a91eafeb2b58571aa22fe5
-               
        </div>
-        
     );
 };
-
 function mapStoreToProps(store) {
     return {meals: store.meals}
 }
