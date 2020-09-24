@@ -1,23 +1,30 @@
 import React, {useEffect} from "react"
-import Header from "../components/header/HeaderDefault"
+import Header from "../components/header/HeaderLogged"
 import '../components/header/header.css'
-import Card from "../components/card/CardDefault"
+import Card from "../components/card/CardLogged"
 import '../components/card/card.css'
 import imgPlate from '../assets/img/pratos.png'
 import "../MealsScreen.css"
 import {mealsGet} from "../api/meals"
 import {connect} from "react-redux"
 import {listMealsAction} from "../Redux/Actions/MealsAction"
+import {isLogged} from '../api/user.js'
 
 
 
-const MealsScreen = ({ history, dispatch, meals}) => {
+const AdminScreen = ({ history, dispatch, meals}) => {
     const listMeals = async () => {
         const meals = await mealsGet()
         dispatch(listMealsAction(meals))
     }
 
-    useEffect(()=> {listMeals()}, [])
+    useEffect(() => {
+        if (isLogged()) {
+            listMeals()
+        } else {
+            history.push('/login')
+        }
+    }, [])
 
     return (
         <div className="index">
@@ -35,4 +42,4 @@ function mapStoreToProps(store) {
     return {meals: store.meals}
 }
 
-export default connect(mapStoreToProps)(MealsScreen)
+export default connect(mapStoreToProps)(AdminScreen)
