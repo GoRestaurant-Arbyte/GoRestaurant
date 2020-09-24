@@ -6,11 +6,9 @@ const TextInput = ({
   className,
   onEnterPressed,
   value,
-  disabled = false,
 }) => {
   return (
     <input
-      disabled={disabled}
       className={`text-input ${className}`}
       type="text"
       value={value}
