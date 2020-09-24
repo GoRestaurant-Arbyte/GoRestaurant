@@ -13,7 +13,9 @@ const MealsScreen = ({ history }) => {
         <div className="sectionCardsPlates">
                <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
                <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>   
-               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>              
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/> 
+               <Card  imgPlate={imgPlate} titleCard="Ao Molho!" price="19,90"/>                 
                </div> 
                
        </div>
