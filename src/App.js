@@ -5,7 +5,6 @@ import LoginScreen from "./screens/LoginScreen";
 import MealsScreen from "./screens/MealsScreen";
 import ChangePass from "./screens/ChangePass";
 
-
 function App() {
 
   return (
