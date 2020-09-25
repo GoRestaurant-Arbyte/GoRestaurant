@@ -1,13 +1,14 @@
 import React, { useState } from "react"
 import Button from "../components/Button";
 import TextInput from "../components/TextInput";
-import {login} from "../api/user"
+import { login } from "../api/user"
+
 
 
 
 
 const LoginScreen = ({ history }) => {
-    
+
     const [CPF, setCPF] = useState("");
     const [password, setPassword] = useState("");
 
@@ -30,25 +31,28 @@ const LoginScreen = ({ history }) => {
     };
 
     return (
-        <>
-            <TextInput
-                className=""
-                placeholder="CPF"
-                onChangeText={(text) => setCPF(text)}
-                onEnterPressed={console.log('Input CPF')}
-            />
-            <TextInput
-                className=""
-                placeholder="Senha"
-                onChangeText={(text) => setPassword(text)}
-                onEnterPressed={console.log('Input senha')}
-            />
+        <div className="container">
+            <div className="modalLogin">
 
-            <Button onPress={doLogin}>Entrar</Button>
-            <Button >Recuperar senha</Button>
-            
-        </>
-        
+                <TextInput
+                    className=""
+                    placeholder="CPF"
+                    onChangeText={(text) => setCPF(text)}
+                    onEnterPressed={console.log('Input CPF')}
+                />
+                <TextInput
+                    className=""
+                    placeholder="Senha"
+                    onChangeText={(text) => setPassword(text)}
+                    onEnterPressed={console.log('Input senha')}
+                />
+
+                <Button onPress={doLogin}>Entrar</Button>
+                <Button >Recuperar senha</Button>
+
+            </div>
+        </div>
+
     );
 };
 
