@@ -31,28 +31,28 @@ const LoginScreen = ({ history }) => {
     };
 
     return (
-        <div className="container">
+        
             <div className="modalLogin">
 
                 <TextInput
-                    className=""
+                    className="inputLogin"
                     placeholder="CPF"
                     onChangeText={(text) => setCPF(text)}
                     onEnterPressed={console.log('Input CPF')}
                 />
                 <TextInput
-                    className=""
+                    className="inputLogin"
                     placeholder="Senha"
                     onChangeText={(text) => setPassword(text)}
                     onEnterPressed={console.log('Input senha')}
+                    type="password"
                 />
 
-                <Button onPress={doLogin}>Entrar</Button>
-                <Button >Recuperar senha</Button>
+                <Button className="buttonLogin" onPress={doLogin}>Entrar</Button>
+                <Button className="buttonLogin">Recuperar senha</Button>
 
             </div>
-        </div>
-
+        
     );
 };
 
