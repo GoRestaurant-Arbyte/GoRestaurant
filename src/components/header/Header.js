@@ -5,6 +5,8 @@ import FoodType from '../../assets/img/foodType.png'
 import { ButtonLogin, ButtonNewMeal } from "../Button/ButtonHeader/ButtonHeader"
 
 
+
+
 function Header() {
     return (
         <div className="headerIndexPage">

@@ -29,11 +29,11 @@ function ButtonLogin(){
     )
 }
 
-function ButtonAddMeal({onPress, children}){
+function ButtonAddMeal({onPress, children,img}){
     return(
     <div className="buttonDiv">
         <button className="button" onClick={onPress}>
-            {children}
+            {children}{img}
         </button>
     </div>
     )
