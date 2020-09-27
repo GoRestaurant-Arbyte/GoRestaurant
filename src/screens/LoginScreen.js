@@ -3,10 +3,6 @@ import Button from "../components/Button";
 import TextInput from "../components/TextInput";
 import { login } from "../api/user"
 
-
-
-
-
 const LoginScreen = ({ history }) => {
 
     const [CPF, setCPF] = useState("");
@@ -41,11 +37,11 @@ const LoginScreen = ({ history }) => {
                     onEnterPressed={console.log('Input CPF')}
                 />
                 <TextInput
-                    className="inputLogin"
+                    className="inputLogin inputPassword"
+                    type="password"
                     placeholder="Senha"
                     onChangeText={(text) => setPassword(text)}
                     onEnterPressed={console.log('Input senha')}
-                    type="password"
                 />
 
                 <Button className="buttonLogin" onPress={doLogin}>Entrar</Button>

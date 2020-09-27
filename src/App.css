@@ -1,21 +1,15 @@
 .container{
     display: flex;
 }
-
-<<<<<<< HEAD
 .modal{
     flex-direction: column;
     align-items: center;
 }
-=======
 
 .modal {
   flex-direction: column;
   align-items: center;
-
 }
-
-
 
 .modalLogin {
   width: 30%;
@@ -26,7 +20,6 @@
   top: 50px;
   flex-direction: column;
   align-items: center;
-  
   background-color: rgba(36, 35, 35, 0.76);
   -webkit-transition: all 0.5s 0.5s ease-in-out;
   transition: all 0.5s 0.5s ease-in-out;
@@ -76,7 +69,8 @@
 .buttonLogin:hover{
   background-color:rgba(36, 35, 35, 0.76); /* Green */
   color: white;
-  border: none;
-  
+  border: none; 
 }
->>>>>>> dbeb99df9940b26f58a7204c565c6c61de0a7bde
+.inputPassword{
+  -webkit-text-security: disc;
+}
