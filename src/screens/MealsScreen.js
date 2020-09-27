@@ -1,15 +1,12 @@
 import React, {useEffect} from "react"
-import Header from "../components/header/HeaderDefault"
-import '../components/header/header.css'
-import Card from "../components/card/CardDefault"
-import '../components/card/card.css'
-
+import Header from "../components/Header/HeaderDefault"
+import '../components/Header/Header.css'
+import Card from "../components/Card/CardDefault"
+import '../components/Card/Card.css'
 import "../MealsScreen.css"
 import {mealsGet} from "../api/meals"
 import {connect} from "react-redux"
 import {listMealsAction} from "../Redux/Actions/MealsAction"
-
-
 
 const MealsScreen = ({ history, dispatch, meals}) => {
     const listMeals = async () => {
@@ -25,12 +22,9 @@ const MealsScreen = ({ history, dispatch, meals}) => {
         <div className="sectionCardsPlates">
             {meals.map(meal=> <Card meal={meal}/>)}                     
         </div> 
-               
        </div>
-        
     );
 };
-
 function mapStoreToProps(store) {
     return {meals: store.meals}
 }
