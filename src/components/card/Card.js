@@ -1,6 +1,7 @@
 import React from "react"
 import ButtonSwitch from '../Button/ButtonSwitch/ButtonSwitch'
 
+
 function Card({ meal }) {
     return (
         <div className="card">
@@ -20,3 +21,17 @@ function Card({ meal }) {
 }
 
 export default Card
+
+
+
+// const onMealDeleted = async (meal) => {
+//     await deleteMeals(meal.id)
+//     dispatch(deleteMealsAction(meal))
+// }
+// const onMealUpdated = async (meal) => {
+//     await mealsPatch(meal.id, meal)
+//     dispatch(updateMealsAction(meal))
+// }
+
+
+// <MealsList onMealUpdated={onMealUpdated} onMealDeleted={onMealDeleted} />
