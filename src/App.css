@@ -1,8 +1,76 @@
 .container{
     display: flex;
 }
-
 .modal{
     flex-direction: column;
     align-items: center;
+}
+
+.modal {
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalLogin {
+  width: 30%;
+  height: 500px;
+  border-radius: 8px;
+  left: 500px;
+  right: 550px;
+  top: 50px;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(36, 35, 35, 0.76);
+  -webkit-transition: all 0.5s 0.5s ease-in-out;
+  transition: all 0.5s 0.5s ease-in-out;
+  box-sizing: border-box;
+  padding:10% ;
+  padding-top: 5%;
+  z-index: 3;
+  position: fixed;
+  
+  display: flex;
+  color: black;
+    
+
+ 
+
+}
+.inputLogin {
+  margin-bottom: 15px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 8px;
+}
+.inputLogin:hover{
+  border: none;
+  border-bottom: 2px solid purple;
+}
+.inputLogin::selection{
+      border: none;
+      border-bottom: 2px solid purple;
+}
+
+.buttonLogin{
+  margin-bottom: 15px;
+  height: 56px;
+  width: 194px;
+  background-color: #38b100;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content:center; 
+  align-items:center;
+  transition-duration: 0.4s;
+}
+.buttonLogin:hover{
+  background-color:rgba(36, 35, 35, 0.76); /* Green */
+  color: white;
+  border: none; 
+}
+.inputPassword{
+  -webkit-text-security: disc;
 }
