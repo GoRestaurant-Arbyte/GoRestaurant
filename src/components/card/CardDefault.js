@@ -11,7 +11,7 @@ function Card({ meal }) {
                 <h2 className="mealsPrice">R${meal.price}</h2>
                 <div className="mealsConf">
                     <p>Disponível</p>
-                    <ButtonSwitch></ButtonSwitch>
+                    <ButtonSwitch  ></ButtonSwitch>
                 </div>
             </div>
         </div>
