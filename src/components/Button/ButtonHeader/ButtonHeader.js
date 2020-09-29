@@ -1,28 +1,15 @@
 import React,{useState} from 'react'
 import './ButtonHeader.css'
 import ModalNewMeal from '../../Modals/ModalNewMeal'
-import ModalLogin from '../../Modals/ModalLogin'
+
 
 function ButtonNewMeal(){
     const [isModalVisible, setIsModalVisible] = useState(false)
     return(
         <>
         <div className="buttonDiv">
-            <button className="button" onClick={()=>setIsModalVisible(true)}>Novo Prato<i>+</i></button>
+            <button className="button" onClick={()=>setIsModalVisible(true)}>Novo Prato</button>
             {isModalVisible ? <ModalNewMeal onClose={()=>setIsModalVisible(false)}/>: null}
-        </div>
-</>
-
-    )
-}
-
-function ButtonLogin(){
-    const [isModalVisible, setIsModalVisible] = useState(false)
-    return(
-        <>
-        <div className="buttonDiv">
-            <button className="button" onClick={()=>setIsModalVisible(true)}>Login</button>
-            {isModalVisible ? <ModalLogin onClose={()=>setIsModalVisible(false)}/>: null}
         </div>
 </>
 
@@ -39,4 +26,4 @@ function ButtonAddMeal({onPress, children,img}){
     )
 }
 
-export {ButtonNewMeal, ButtonLogin, ButtonAddMeal}
+export {ButtonNewMeal, ButtonAddMeal}
