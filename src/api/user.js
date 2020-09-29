@@ -17,7 +17,6 @@ export async function forgotpass (cpf){
 
 }
 
-
 export function isLogged() {
     const logged = localStorage.getItem('userData')
     return !!logged

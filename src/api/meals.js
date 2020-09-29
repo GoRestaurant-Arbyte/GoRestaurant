@@ -21,8 +21,8 @@ async function mealsPost(image_url, name, price, description){
     return response.data
 }
 
-async function mealsPatch(){
-    const response = await Axios.patch(`${URLMeals}/meals/:id`, {
+async function mealsPatch(id, meal){
+    const response = await Axios.patch(`${URLMeals}/meals/${id}`, {
 
     }, {headers: {authorization: `Bearer ${getToken()}`}})
     return response.data
@@ -33,4 +33,8 @@ async function mealsGet(){
     return response.data
 }
 
-export {mealsPost, mealsPatch, mealsGet}
+async function deleteMeals(id) {
+    await Axios.delete(`${URLMeals}/meals/${id}`, { headers: { authorization: `Bearer ${getToken()}` } })
+}
+
+export {mealsPost, mealsPatch, mealsGet, deleteMeals}

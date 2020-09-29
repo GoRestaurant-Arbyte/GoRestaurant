@@ -17,11 +17,11 @@ function HeaderLogged() {
             </div>
 
             <div className="buttonHeader">
-            
-      <ButtonNewMeal />
-            </div>
 
-        </div >
+
+                <ButtonNewMeal />
+            </div>
+        </div>
     )
 
 }
