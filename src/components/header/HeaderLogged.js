@@ -18,7 +18,7 @@ function Header() {
                 </section>
             </div>
             
-            <ButtonLogin />
+            <ButtonNewMeal />
         </div >
     )
 

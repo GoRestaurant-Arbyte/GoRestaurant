@@ -1,8 +1,8 @@
 import React, {useEffect} from "react"
-import Header from "../components/Header/HeaderDefault"
-import '../components/Header/Header.css'
-import Card from "../components/Card/CardDefault"
-import '../components/Card/Card.css'
+import Header from "../components/header/HeaderDefault"
+import '../components/header/header.css'
+import Card from "../components/card/CardDefault"
+import '../components/card/card.css'
 import "../MealsScreen.css"
 import {mealsGet} from "../api/meals"
 import {connect} from "react-redux"
