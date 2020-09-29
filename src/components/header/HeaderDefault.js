@@ -5,7 +5,7 @@ import FoodType from '../../assets/img/foodType.png'
 import { ButtonLogin, ButtonNewMeal } from "../Button/ButtonHeader/ButtonHeader"
 
 
-function Header() {
+function HeaderDefault() {
     return (
         <div className="headerIndexPage">
             <div className="header">
@@ -20,4 +20,4 @@ function Header() {
 
 }
 
-export default Header
+export default HeaderDefault

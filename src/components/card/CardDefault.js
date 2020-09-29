@@ -7,8 +7,8 @@ function Card({ meal }) {
             <img className="imgPlates" src={meal.image_url} alt="imagem de prato veggie"></img>
             <div className="foodDescription">
                 <h1 className="titleCard">{meal.name}</h1>
-                <p>{meal.description}</p>
-                <h2 className="mealsPrice">R${meal.price}</h2>
+                <p className="descriptionText">{meal.description}</p>
+                <h2 className="mealsPrice">R${meal.price.toFixed(2)}</h2>
                 <div className="mealsConf">
                     <ButtonSwitch></ButtonSwitch>
                 </div>
