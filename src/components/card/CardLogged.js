@@ -26,6 +26,7 @@ function Card({ meal, dispatch }) {
                 <p className="descriptionText">{meal.description}</p>
                 <h2 className="mealsPrice">R${meal.price.toFixed(2)}</h2>
                 <div className="mealsConf">
+
                     <button className="buttonConf" onClick={()=> onMealDeleted(meal)}><Icon icon='trash'></Icon></button> <button className="buttonConf" onClick={()=>onMealUpdated(meal)}><Icon icon='edit'></Icon></button>
                     <ButtonSwitch></ButtonSwitch>
                 </div>
