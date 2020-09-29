@@ -1,6 +1,7 @@
 import React from "react"
 import ButtonSwitch from '../Button/ButtonSwitch/ButtonSwitch'
 
+
 function Card({ meal }) {
     return (
         <div className="card">
@@ -11,7 +12,6 @@ function Card({ meal }) {
                 <h2 className="mealsPrice">R${meal.price}</h2>
                 <div className="mealsConf">
                     <button className="buttonConf" ><image src="DeleteIcon"></image> </button> <button className="buttonConf"></button>
-                    <p>Disponível</p>
                     <ButtonSwitch></ButtonSwitch>
                 </div>
             </div>
