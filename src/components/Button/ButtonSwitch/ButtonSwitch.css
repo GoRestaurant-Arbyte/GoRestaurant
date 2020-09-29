@@ -1,0 +1,10 @@
+span{
+    padding-right: 30px;
+    font-size: 14px;
+}
+.ContainerButtonSwitch{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}

@@ -10,7 +10,6 @@ function Card({ meal }) {
                 <p className="descriptionText">{meal.description}</p>
                 <h2 className="mealsPrice">R${meal.price.toFixed(2)}</h2>
                 <div className="mealsConf">
-                    <p>Disponível</p>
                     <ButtonSwitch></ButtonSwitch>
                 </div>
             </div>
