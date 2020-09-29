@@ -16,9 +16,10 @@
 .imgPlates{
     box-sizing: border-box;
     align-items: center;
-    width: 16rem;
-    height: 16rem;
+    width: 75%;
+    height: 65%;
     padding-top: 2rem;
+    border-radius: 50%;
 }
 
 .foodDescription{
@@ -41,6 +42,7 @@ p{
      box-sizing: border-box;
      height: 20px;
      padding-top: 4px;
+     padding-left: 1.8rem;
 }
 h2{
     color: #39B100;

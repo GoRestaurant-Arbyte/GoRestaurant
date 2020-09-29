@@ -17,8 +17,9 @@ function Header() {
                     <img src={FoodType}></img>
                 </section>
             </div>
-            
+            <div className="buttonHeader">
             <ButtonLogin />
+            </div>
         </div >
     )
 
