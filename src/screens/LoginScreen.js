@@ -4,6 +4,7 @@ import TextInput from "../components/TextInput";
 import { login } from "../api/user"
 import ForgotPassword from "../screens/ForgotPass"
 
+
 const LoginScreen = ({ history }) => {
 
     const [CPF, setCPF] = useState("");
@@ -29,7 +30,11 @@ const LoginScreen = ({ history }) => {
 
     return (
         
+        
+        
             <div className="modalLogin">
+             
+                
 
                 <TextInput
                     className="inputLogin"
