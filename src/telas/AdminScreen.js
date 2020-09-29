@@ -1,8 +1,4 @@
 import React, {useEffect} from "react"
-<<<<<<< HEAD
-=======
-
->>>>>>> 1f2448beae21b8e530baefeaf910a49536ea7c71
 import Header from "../components/header/HeaderLogged"
 import '../components/header/header.css'
 import Card from "../components/card/CardLogged"
