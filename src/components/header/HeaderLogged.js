@@ -18,8 +18,8 @@ function HeaderLogged() {
 
             <div className="buttonHeader">
             
-      <ButtonNewMeal />
-            </div>
+
+            <ButtonNewMeal />
 
         </div >
     )

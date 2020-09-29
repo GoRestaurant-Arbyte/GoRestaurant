@@ -9,7 +9,6 @@ export async function login(cpf, password) {
   return response.data;
 }
 
-
 export function isLogged() {
     const logged = localStorage.getItem('userData')
     return !!logged
