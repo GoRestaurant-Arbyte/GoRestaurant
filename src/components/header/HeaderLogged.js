@@ -15,8 +15,12 @@ function HeaderLogged() {
                     <img src={FoodType}></img>
                 </section>
             </div>
+
+            <div className="buttonHeader">
             
-            <ButtonNewMeal />
+      <ButtonNewMeal />
+            </div>
+
         </div >
     )
 

@@ -9,14 +9,14 @@
     background-color: #39B100;
     border-radius: 8px;
     border: none;
-    padding: 0;
+    padding-right: 70%;
     color: white;
     display: flex;
     justify-content:center; 
     align-items:center;
 }
 
-.buttonAdd{
+/* .buttonAdd{
     height: 56px;
     width: 56px;
     background-color:#41C900;
@@ -25,11 +25,13 @@
     margin: 0;
     margin-left: 20px;
     color: white;
-}
+} */
 
 @media(max-width: 700px){
     .button{
         width: 50px;
+        size: 20px;
+        padding: 5px;
     }
 
 }
