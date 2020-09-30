@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import Button from "../components/Button";
 import TextInput from "../components/TextInput";
 import { login } from "../api/user"
+import ForgotPassword from "../screens/ForgotPass"
+
 
 const LoginScreen = ({ history }) => {
 
@@ -28,7 +30,11 @@ const LoginScreen = ({ history }) => {
 
     return (
         
+        
+        
             <div className="modalLogin">
+             
+                
 
                 <TextInput
                     className="inputLogin"
@@ -45,7 +51,7 @@ const LoginScreen = ({ history }) => {
                 />
 
                 <Button className="buttonLogin" onPress={doLogin}>Entrar</Button>
-                <Button className="buttonLogin">Recuperar senha</Button>
+                <Button className="buttonLogin" onPress={ForgotPassword}>Recuperar senha</Button>
 
             </div>
         

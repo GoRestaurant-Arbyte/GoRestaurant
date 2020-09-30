@@ -8,7 +8,7 @@ function ButtonNewMeal(){
     return(
         <>
         <div className="buttonDiv">
-            <button className="button" onClick={()=>setIsModalVisible(true)}>Novo Prato<i>+</i></button>
+            <button className="button" onClick={()=>setIsModalVisible(true)}>Novo Prato</button>
             {isModalVisible ? <ModalNewMeal onClose={()=>setIsModalVisible(false)}/>: null}
         </div>
 </>
