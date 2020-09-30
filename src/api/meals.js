@@ -22,9 +22,7 @@ async function mealsPost(image_url, name, price, description){
 }
 
 async function mealsPatch(id, meal){
-    const response = await Axios.patch(`${URLMeals}/meals/${id}`, {
-
-    }, {headers: {authorization: `Bearer ${getToken()}`}})
+    const response = await Axios.patch(`${URLMeals}/meals/${id}`, meal , {headers: {authorization: `Bearer ${getToken()}`}})
     return response.data
 }
 
