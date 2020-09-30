@@ -18,6 +18,10 @@ function Card({ meal, dispatch }) {
     }
 
 
+
+
+function Card({ meal }) {
+
     return (
         <div className="card">
             <img className="imgPlates" src={meal.image_url} alt="imagem de prato veggie"></img>
@@ -27,9 +31,8 @@ function Card({ meal, dispatch }) {
                 <h2 className="mealsPrice">R${meal.price.toFixed(2)}</h2>
                 <div className="mealsConf">
 
-                    <button className="buttonConf" onClick={()=> onMealDeleted(meal)}><Icon icon='trash'></Icon></button> <button className="buttonConf" onClick={()=>onMealUpdated(meal)}><Icon icon='edit'></Icon></button>
+                    <button className="buttonConf" ><image src="DeleteIcon"></image> </button> <button className="buttonConf"></button>
 
-                    <p>Disponível</p>
                     <ButtonSwitch></ButtonSwitch>
                 </div>
             </div>
